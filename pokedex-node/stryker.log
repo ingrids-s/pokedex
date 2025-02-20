@@ -1,0 +1,238 @@
+14:58:41 (42099) DEBUG ConfigReader Loading config from stryker.conf.js
+14:58:41 (42099) DEBUG ConfigReader Loaded config: {
+  "mutate": [
+    "src/**/*.js"
+  ],
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "summary"
+  ],
+  "coverageAnalysis": "off",
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "allowConsoleColors": true,
+  "checkers": [],
+  "checkerNodeArgs": [],
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "allowEmojis": false,
+    "logTests": true,
+    "maxTestsToLog": 3,
+    "reportTests": true,
+    "reportMutants": true,
+    "reportScoreTable": true,
+    "skipFull": false
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "dryRunOnly": false,
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "ignorePatterns": [],
+  "ignoreStatic": false,
+  "incremental": false,
+  "incrementalFile": "reports/stryker-incremental.json",
+  "force": false,
+  "inPlace": false,
+  "maxConcurrentTestRunners": 9007199254740991,
+  "maxTestRunnerReuse": 0,
+  "mutator": {
+    "plugins": null,
+    "excludedMutations": []
+  },
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "appendPlugins": [],
+  "htmlReporter": {
+    "fileName": "reports/mutation/mutation.html"
+  },
+  "jsonReporter": {
+    "fileName": "reports/mutation/mutation.json"
+  },
+  "disableTypeChecks": true,
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "cleanTempDir": true,
+  "testRunnerNodeArgs": [],
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "dryRunTimeoutMinutes": 5,
+  "tsconfigFile": "tsconfig.json",
+  "warnings": true,
+  "disableBail": false,
+  "allowEmpty": false,
+  "ignorers": []
+}
+14:58:41 (42099) DEBUG PluginLoader Loading @stryker-mutator/* from /home/ingrids/Área de trabalho/pokedex/pokedex-node/node_modules/@stryker-mutator
+14:58:41 (42099) DEBUG PluginLoader Loading plugin "@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+14:58:41 (42099) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
+14:58:41 (42099) DEBUG PluginLoader Loading plugin file:///home/ingrids/%C3%81rea%20de%20trabalho/pokedex/pokedex-node/node_modules/@stryker-mutator/instrumenter/dist/src/frameworks/index.js
+14:58:41 (42099) DEBUG PluginLoader Loading plugin file:///home/ingrids/%C3%81rea%20de%20trabalho/pokedex/pokedex-node/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+14:58:41 (42099) DEBUG MetaSchemaBuilder Contributing 1 schemas from plugins to options validation.
+14:58:41 (42099) INFO ProjectReader Found 5 of 18 file(s) to be mutated.
+14:58:41 (42099) DEBUG ProjectReader All input files: [
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/.env",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/babel.config.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/index.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/jest.config.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/package-lock.json",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/package.json",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/controllers/pokemonController.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/models/pokemonModel.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/repositories/pokemonRepository.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/routes/pokemonRoutes.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/services/pokemonService.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/stryker.conf.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/stryker.config.json",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/tests/PokemonController.test.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/tests/PokemonModel.spec.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/tests/PokemonRepository.test.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/tests/PokemonRoutes.test.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/tests/PokemonService.spec.js"
+]
+14:58:41 (42099) DEBUG ProjectReader Files to mutate: [
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/controllers/pokemonController.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/models/pokemonModel.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/repositories/pokemonRepository.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/routes/pokemonRoutes.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/services/pokemonService.js"
+]
+14:58:41 (42099) DEBUG TemporaryDirectory Using temp directory "/home/ingrids/Área de trabalho/pokedex/pokedex-node/.stryker-tmp/sandbox-9phlUQ"
+14:58:41 (42099) DEBUG Instrumenter Instrumenting 5 source files with mutants
+14:58:41 (42099) DEBUG Stryker Not removing the temp dir because an error occurred
+14:58:41 (42099) ERROR Stryker Unexpected error occurred while running Stryker [ConfigError: Configuration should be an exported JavaScript object.]
+14:58:41 (42099) INFO Stryker This might be a known problem with a solution documented in our troubleshooting guide.
+14:58:41 (42099) INFO Stryker You can find it at https://stryker-mutator.io/docs/stryker-js/troubleshooting/
+15:15:04 (43308) DEBUG ConfigReader Loading config from stryker.conf.js
+15:15:04 (43308) DEBUG ConfigReader Loaded config: {
+  "mutate": [
+    "src/**/*.js"
+  ],
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "summary"
+  ],
+  "coverageAnalysis": "off",
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "allowConsoleColors": true,
+  "checkers": [],
+  "checkerNodeArgs": [],
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "allowEmojis": false,
+    "logTests": true,
+    "maxTestsToLog": 3,
+    "reportTests": true,
+    "reportMutants": true,
+    "reportScoreTable": true,
+    "skipFull": false
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "dryRunOnly": false,
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "ignorePatterns": [],
+  "ignoreStatic": false,
+  "incremental": false,
+  "incrementalFile": "reports/stryker-incremental.json",
+  "force": false,
+  "inPlace": false,
+  "maxConcurrentTestRunners": 9007199254740991,
+  "maxTestRunnerReuse": 0,
+  "mutator": {
+    "plugins": null,
+    "excludedMutations": []
+  },
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "appendPlugins": [],
+  "htmlReporter": {
+    "fileName": "reports/mutation/mutation.html"
+  },
+  "jsonReporter": {
+    "fileName": "reports/mutation/mutation.json"
+  },
+  "disableTypeChecks": true,
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "cleanTempDir": true,
+  "testRunnerNodeArgs": [],
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "dryRunTimeoutMinutes": 5,
+  "tsconfigFile": "tsconfig.json",
+  "warnings": true,
+  "disableBail": false,
+  "allowEmpty": false,
+  "ignorers": []
+}
+15:15:04 (43308) DEBUG PluginLoader Loading @stryker-mutator/* from /home/ingrids/Área de trabalho/pokedex/pokedex-node/node_modules/@stryker-mutator
+15:15:04 (43308) DEBUG PluginLoader Loading plugin "@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+15:15:04 (43308) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
+15:15:04 (43308) DEBUG PluginLoader Loading plugin file:///home/ingrids/%C3%81rea%20de%20trabalho/pokedex/pokedex-node/node_modules/@stryker-mutator/instrumenter/dist/src/frameworks/index.js
+15:15:04 (43308) DEBUG PluginLoader Loading plugin file:///home/ingrids/%C3%81rea%20de%20trabalho/pokedex/pokedex-node/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+15:15:04 (43308) DEBUG MetaSchemaBuilder Contributing 1 schemas from plugins to options validation.
+15:15:04 (43308) INFO ProjectReader Found 5 of 18 file(s) to be mutated.
+15:15:04 (43308) DEBUG ProjectReader All input files: [
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/.env",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/babel.config.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/index.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/jest.config.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/package-lock.json",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/package.json",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/controllers/pokemonController.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/models/pokemonModel.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/repositories/pokemonRepository.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/routes/pokemonRoutes.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/services/pokemonService.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/stryker.conf.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/stryker.config.json",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/tests/PokemonController.test.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/tests/PokemonModel.spec.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/tests/PokemonRepository.test.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/tests/PokemonRoutes.test.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/tests/PokemonService.spec.js"
+]
+15:15:04 (43308) DEBUG ProjectReader Files to mutate: [
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/controllers/pokemonController.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/models/pokemonModel.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/repositories/pokemonRepository.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/routes/pokemonRoutes.js",
+  "/home/ingrids/Área de trabalho/pokedex/pokedex-node/src/services/pokemonService.js"
+]
+15:15:04 (43308) DEBUG TemporaryDirectory Using temp directory "/home/ingrids/Área de trabalho/pokedex/pokedex-node/.stryker-tmp/sandbox-ZNghHe"
+15:15:04 (43308) DEBUG Instrumenter Instrumenting 5 source files with mutants
+15:15:04 (43308) DEBUG Stryker Not removing the temp dir because an error occurred
+15:15:04 (43308) ERROR Stryker Unexpected error occurred while running Stryker [ConfigError: Configuration should be an exported JavaScript object.]
+15:15:04 (43308) INFO Stryker This might be a known problem with a solution documented in our troubleshooting guide.
+15:15:04 (43308) INFO Stryker You can find it at https://stryker-mutator.io/docs/stryker-js/troubleshooting/
