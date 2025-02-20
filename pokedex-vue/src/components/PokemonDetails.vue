@@ -22,7 +22,7 @@
                 <li
                     v-for="(type, index) in pokemon.types"
                     :key="index"
-                    class="tag poke_types"
+                    class="tag poke_types poke_description"
                     style="--color: #efd81d;"
                 >
                     <a href="#">{{ type }}</a>
@@ -35,7 +35,7 @@
                 <li
                     v-for="(ability, index) in pokemon.abilities"
                     :key="index"
-                    class="tag poke_abilities"
+                    class="tag poke_abilities poke_statistics"
                     style="--color: #efd81d;"
                 >
                     <a href="#">{{ ability }}</a>
